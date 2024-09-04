@@ -17,7 +17,6 @@ export const getStaticProps = async () => {
       allBooks,
       recoBooks,
     },
-    revalidate: 3
   };
 };
 
@@ -25,6 +24,7 @@ export default function Home({
   allBooks,
   recoBooks,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  console.log('인덱스 페이지')
   return (
     <div className={style.container}>
       <section>
